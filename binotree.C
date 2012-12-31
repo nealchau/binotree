@@ -109,7 +109,7 @@ double priceoption(payofffunc &payoff, double r, double T, double sig, double S0
 int main()
 {
 	callpayoff atm(100.), dim(90.), ffm(110.);
-	digcallpayoff  datm(100.), ddim(90.), dffm(110.);A
+	digcallpayoff  datm(100.), ddim(90.), dffm(110.);
 	cout << "atm call=" << priceoption(atm, .05, 1., .2, 100., 50) << endl;
 	cout << "dim call=" << priceoption(dim, .05, 1., .2, 100., 50) << endl;
 	cout << "ffm call=" << priceoption(ffm, .05, 1., .2, 100., 50) << endl;
